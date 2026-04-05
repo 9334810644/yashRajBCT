@@ -5,6 +5,40 @@ About
 {% endblock %}
 
 {% block content %}
-<h1>About Page</h1>
-<p>This is the about page.</p>
+<section class="about-hero">
+    <div class="page-heading">
+        <h1>Bringing great products to life</h1>
+        <p>We blend thoughtful design, clear product details, and fast browsing to make every visit feel polished and easy.</p>
+    </div>
+    <div class="about-grid">
+        <div class="about-card">
+            <h2>Our Story</h2>
+            <p>We started with a desire to create a modern online experience that helps customers find the right products quickly.</p>
+        </div>
+        <div class="about-card">
+            <h2>Our Mission</h2>
+            <p>To deliver a clean, trustworthy storefront that looks beautiful and works smoothly on every device.</p>
+        </div>
+        <div class="about-card">
+            <h2>What We Believe</h2>
+            <p>Great product pages are simple, easy to scan, and filled with helpful details that build confidence.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-details">
+    <div class="detail-panel">
+        <h3>Why choose our store?</h3>
+        <ul>
+            <li>Fast, responsive browsing for desktop and mobile</li>
+            <li>Clear product visuals and smooth navigation</li>
+            <li>Real product information you can trust</li>
+        </ul>
+    </div>
+    <div class="detail-panel contact-highlight">
+        <h3>Need help?</h3>
+        <p>Our team is ready to answer questions, offer product guidance, and help you complete your order with confidence.</p>
+        <a href="{% url 'newApp:contact' %}" class="btn btn-primary">Contact Support</a>
+    </div>
+</section>
 {% endblock %}
